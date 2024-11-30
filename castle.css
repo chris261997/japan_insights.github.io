@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f4f8; /* Soft background color */
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #0056b3, #007bff); /* Gradient background */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.brand {
+    font-size: 28px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navigation {
+    position: relative;
+}
+
+.navigation-items {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-items a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.navigation-items a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slightly lighter hover effect */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.navigation-items .dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px; /* Match padding with other links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.dropbtn:hover {
+    background: rgba(255, 255, 255, 0.2); /* Match hover effect */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #444;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px; /* Rounded corners for dropdown */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.show {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limit max width for better readability */
+    margin: auto; /* Center the main content */
+}
+
+.castle {
+    background: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 40px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.castle:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.castle img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjust height as needed */
+    display: block;
+    margin: 0 auto 15px; /* Add margin below image */
+    border-radius: 8px; /* Match the border radius */
+    transition: transform 0.3s; /* Add transition for image scaling */
+}
+
+.castle img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #0056b3; /* Change color for main title */
+}
+
+h2 {
+    color: #007bff; /* Use a lighter blue */
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+h3 {
+    font-size: 18px;
+    color: #555; /* Slightly lighter color */
+}
+
+footer {
+    background: linear-gradient(135deg, #0056b3, #007bff); /* Match header gradient */
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navigation-items {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align to start */
+    }
+
+    .navigation-items a {
+        padding: 10px; /* Adjust padding */
+        width: 100%; /* Full width for links */
+        text-align: center; /* Center text */
+    }
+
+    header {
+        flex-direction: column; /* Stack header elements */
+        align-items: flex-start; /* Align to start */
+    }
+
+    .castle {
+        padding: 15px; /* Adjust padding */
+    }
+}

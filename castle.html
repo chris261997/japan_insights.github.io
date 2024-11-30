@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.jpg">
+    <title>5 Iconic Castles in Japan</title>
+    <link rel="stylesheet" href="castle.css">
+    <script src="https://kit.fontawesome.com/63e7980167.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">Japan Insights</a>
+        <nav class="navigation">
+            <div class="navigation-items">
+                <a href="index.html" target="_blank">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Info</button>
+                    <div class="dropdown-content">
+                        <a href="season.html" target="_blank">Seasons</a>
+                        <a href="#">Iconic Castles</a>
+                        <a href="festival.html" target="_blank">Festivals</a>
+                        <a href="#">Famous Landmarks</a>
+                    </div>
+                </div>
+                <a href="gallery.html" target="_blank">Image Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>5 Iconic Japanese Castles</h1>
+
+        <section class="castle">
+            <h2>01. Himeji Castle, Hyogo Prefecture</h2>
+            <img src="gallery/castle.avif" alt="Himeji Castle, a UNESCO World Heritage site">
+            <h3>"White Heron Castle"</h3>
+            <p>Castle of the White Heron," Himeji Castle is a 700-year-old Japanese UNESCO World Heritage Site. It was first constructed in the early 1300s and has experienced multiple additions and renovations. The haunting Okiku's Well, influenced by the folktale Bancho Sarayashiki, is also located within the castle. During winter nights, the castle presents a lighting event.</p>
+        </section>
+
+        <section class="castle">
+            <h2>02. Osaka Castle, Osaka Prefecture</h2>
+            <img src="castle_image/osaka-castle.jpeg" alt="Osaka Castle">
+            <h3>"Golden Castle"</h3>
+            <p>During the Sengoku period, Osaka Castle was a well-known monument. The Tokugawa Clan took control of the castle in 1615, despite Toyotomi Hideyoshi's efforts to enlarge it. The five-story castle rests on cyclopean foundations and offers a 360-degree outlook.</p>
+        </section>
+
+        <section class="castle">
+            <h2>03. Matsumoto Castle, Nagano Prefecture</h2>
+            <img src="castle_image/matsumoto.jpg" alt="Matsumoto Castle">
+            <h3>"Crow Castle"</h3>
+            <p>Toyotomi Hideyoshi constructed the black-walled Matsumoto Castle in the 16th century. Known as Karasu-jo, this building features a moon-viewing room, steep steps, and secret levels that showcase architecture from both war and peace.</p>
+        </section>
+
+        <section class="castle">
+            <h2>04. Hirosaki Castle, Aomori Prefecture</h2>
+            <img src="castle_image/hirosaki.jpeg" alt="Hirosaki Castle">
+            <h3>"Flower Raft Castle"</h3>
+            <p>Constructed in 1611, Hirosaki Castle features a tiered keep and is popular during the spring sakura season with over 2,600 cherry trees surrounding it.</p>
+        </section>
+
+        <section class="castle">
+            <h2>05. Matsue Castle, Shimane Prefecture</h2>
+            <img src="castle_image/matsue.jpg" alt="Matsue Castle">
+            <h3>"Plover Castle"</h3>
+            <p>Matsue Castle dates back to the 1600s and served as a center of authority under Tokugawa Ieyasu. It features gray roofs and black walls, and houses the Lafcadio Hearn Museum.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Japan Insights. All rights reserved.</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.dropbtn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                document.querySelectorAll('.dropdown-content').forEach(content => {
+                    content.classList.remove('show');
+                });
+            }
+        };
+    </script>
+</body>
+</html>

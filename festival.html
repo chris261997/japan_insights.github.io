@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.jpg">
+    <title>15 Popular Festivals in Japan</title>
+    <link rel="stylesheet" href="festival.css">
+    <script src="https://kit.fontawesome.com/63e7980167.js" crossorigin="anonymous"></script>
+</head>
+<<body>
+    <header>
+        <a href="#" class="brand">Japan Insights</a>
+        <nav class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Info</button>
+                    <div class="dropdown-content">
+                        <a href="season.html" target="_blank">Seasons</a>
+                        <a href="#">Iconic Castles</a>
+                        <a href="festival.html" target="_blank">Festivals</a>
+                        <a href="#">Famous Landmarks</a>
+                    </div>
+                </div>
+                <a href="gallery.html" target="_blank">Image Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Festivals in Japan</h1>
+        <!-- Festival Sections -->
+        <section>
+            <h2>01. Shogatsu / New Year Festival</h2>
+            <img src="festival_image/shogatsu.jpg" alt="Shogatsu Festival">
+            <p>Shogatsu, a significant Japanese New Year celebration, falls on January 1, but is extended to days before and after. It involves traditional foods, soba noodles, and prayers for the nation.</p>
+        </section>
+
+        <section>
+            <h2>02. Setsubun / Bean Throwing Festival</h2>
+            <img src="festival_image/setsubun.jpg" alt="Setsubun Festival">
+            <p>Popularly known as the Bean-Throwing Festival, Setsubun is a Japanese holiday observed on the first day of spring.</p>
+        </section>
+
+        <section>
+            <h2>03. Hanami / Cherry Blossom Festival</h2>
+            <img src="festival_image/hanami.jpg" alt="Hanami Festival">
+            <p>Hanami refers to "flower viewing" during the cherry blossom festival. Thousands gather in parks for picnics and parties.</p>
+        </section>
+
+        <section>
+            <h2>04. Gion Festival</h2>
+            <img src="festival_image/gion.jpg" alt="Gion Festival">
+            <p>Kyoto's Gion Festival takes place over two days in July, featuring a grand parade and traditional attire.</p>
+        </section>
+
+        <section>
+            <h2>05. Sapporo Snow Festival</h2>
+            <img src="festival_image/sapporo.jpg" alt="Sapporo Snow Festival">
+            <p>The Sapporo Snow Festival is one of Japan's greatest winter festivals, attracting millions of visitors.</p>
+        </section>
+
+        <section>
+            <h2>06. Aomori Nebuta Festival</h2>
+            <img src="festival_image/aomori.jpg" alt="Aomori Nebuta Festival">
+            <p>The Aomori Nebuta Festival is known for its colorful lantern floats and lively parades.</p>
+        </section>
+
+        <section>
+            <h2>07. Tenjin Festival</h2>
+            <img src="festival_image/tenjin.jpg" alt="Tenjin Festival">
+            <p>Osaka's Tenjin Matsuri features a land and boat procession with music and local cuisine.</p>
+        </section>
+
+        <section>
+            <h2>08. Kanda Festival</h2>
+            <img src="festival_image/kanda.jpg" alt="Kanda Festival">
+            <p>Kanda Matsuri is a vibrant Shinto celebration with a colorful procession and food vendors.</p>
+        </section>
+
+        <section>
+            <h2>09. Nagasaki Lantern Festival</h2>
+            <img src="festival_image/lantern.jpg" alt="Nagasaki Lantern Festival">
+            <p>The Nagasaki Lantern Festival features thousands of handmade lanterns and cultural performances.</p>
+        </section>
+
+        <section>
+            <h2>10. Takayama Festival</h2>
+            <img src="festival_image/takayama.webp" alt="Takayama Festival">
+            <p>Known for its puppet performances and intricately carved floats, Takayama Festival attracts many visitors.</p>
+        </section>
+
+        <section>
+            <h2>11. Chichibu Night Festival</h2>
+            <img src="festival_image/chichibu.webp" alt="Chichibu Night Festival">
+            <p>Chichibu Night Festival is famous for its spectacular floats and fireworks.</p>
+        </section>
+
+        <section>
+            <h2>12. Sendai Tanabata Festival</h2>
+            <img src="festival_image/sendai.jpg" alt="Sendai Tanabata Festival">
+            <p>The Sendai Tanabata Festival features vibrant decorations and traditional performances.</p>
+        </section>
+
+        <section>
+            <h2>13. Awa Odori Festival</h2>
+            <img src="festival_image/awa-odori.jpg" alt="Awa Odori Festival">
+            <p>The Awa Odori is a lively dance festival with a history of over 400 years.</p>
+        </section>
+
+        <section>
+            <h2>14. Tokyo Bay Fireworks</h2>
+            <img src="festival_image/tokyo-bay.avif" alt="Tokyo Bay Fireworks">
+            <p>Tokyo Bay Fireworks features stunning pyrotechnics lighting up the night sky.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Japan Insights. All Rights Reserved.</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.dropbtn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.nextElementSibling.classList.toggle('show');
+            });
+        });
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                document.querySelectorAll('.dropdown-content').forEach(content => {
+                    content.classList.remove('show');
+                });
+            }
+        };
+    </script>
+</body>
+</html>
