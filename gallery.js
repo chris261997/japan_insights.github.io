@@ -12,11 +12,11 @@ document.querySelector('.caption p');
 
 // Data for the slider
 const images = [
-    "mountain.avif", "castle.avif", "downtown.avif", "landmark.jpg", "shinkansen.avif", "onsen.jpg", "sakura.avif", "hakone.jpg", "sushi.avif", "anime.avif", "temple.avif", "bamboo.avif", "bonsai.avif"
+    "mountain.avif", "castle.avif", "downtown.avif", "landmark.jpg", "shinkansen.avif", "onsen.jpg", "sakura.avif", "hakone.jpg", "sushi.avif", "anime.avif", "temple.avif", "arashiyama.jpg", "bonsai.avif"
 ];
 
 const headings = [
-    "Mount Fuji, Shizuoka-Yamanashi Prefecture", "Himeji Castle, Hyōgo Prefcture", "Kabukichō District, Shinjuku Ward, Tokyo", "Tokyo Tower, Minato Ward, Tokyo", "Kyushu region, Japan", "Kusatsu Onsen, Gunma Prefecture", "Tatebayashi, Gunma Prefecture", "Hakone Shrine's famous lakefront Torii gate, Kanagawa Prefecture", "Traditional Tuna Nigiri Sushi", "Background Grid displaying iconic animes produced in Japan", "Shitennō-ji Temple, Osaka", "Sagano Bamboo Forest, Kyoto", "Originating in Japan and China over a millennium ago, the art of bonsai is intricately linked to promoting relaxation and balance. It also aligns with spiritual movements like Zen Buddhism, embodying the essence of natural beauty and harmony"
+    "Mount Fuji, Shizuoka-Yamanashi Prefecture", "Himeji Castle, Hyōgo Prefcture", "Kabukichō District, Shinjuku Ward, Tokyo", "Tokyo Tower, Minato Ward, Tokyo", "Kyushu region, Japan", "Kusatsu Onsen, Gunma Prefecture", "Tatebayashi, Gunma Prefecture", "Hakone Shrine's famous lakefront Torii gate, Kanagawa Prefecture", "Traditional Tuna Nigiri Sushi", "Background Grid displaying iconic animes produced in Japan", "Shitennō-ji Temple, Osaka", "Arashiyama Bamboo Forest, Kyoto", "Originating in Japan and China over a millennium ago, the art of bonsai is intricately linked to promoting relaxation and balance. It also aligns with spiritual movements like Zen Buddhism, embodying the essence of natural beauty and harmony"
 ];
 
 const descriptions = [
@@ -31,7 +31,7 @@ const descriptions = [
     "Japan's finest delicacy",
     "Japan's largest cultural export",
     "Temple of the 'Four Heavenly Kings'",
-    "Ghost Forests of Japan",
+    "Jewel of the Storm Mountain",
     "The art of Bonsai",
 ];
 
