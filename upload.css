@@ -36,8 +36,8 @@ h1 {
 /* Upload button styles */
 .upload-button {
     display: inline-block;
-    background-color: black;
-    color: white;
+    background-color: #eee6d9;
+    color: #bc002d;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 25px;
@@ -46,7 +46,8 @@ h1 {
 }
 
 .upload-button:hover {
-    background-color: #1680AC;
+    background-color: #bc002d;
+    color: #eee6d9;
 }
 
 /* Image preview styles */
