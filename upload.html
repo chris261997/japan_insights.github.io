@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Upload</title>
+    <title>Upload and Store Image in Local Database</title>
     <link rel="stylesheet" href="upload.css">
 </head>
 <body>
     <div class="container">
-        <h1>Select an Image</h1>
-        <input type="file" id="fileInput" accept="image/*" required>
-        <div id="preview"></div>
-        <button id="downloadButton" style="display:none;">Download</button>
+        <h1>Upload and Store Image</h1>
+        <label for="imageInput" class="upload-button">Choose Image</label>
+        <input type="file" id="imageInput" accept="image/*" hidden>
+        
+        <div id="imagePreview" class="image-preview">
+            <!-- Uploaded image will be displayed here -->
+        </div>
+        
+        <div class="image-gallery" id="imageGallery">
+            <!-- Images from the database will be displayed here -->
+        </div>
     </div>
+
     <script src="upload.js"></script>
 </body>
 </html>

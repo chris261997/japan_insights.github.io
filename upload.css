@@ -1,37 +1,100 @@
+/* Base styles for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    margin: 0;
 }
 
 .container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
     text-align: center;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
 }
 
-input[type="file"] {
-    margin-bottom: 10px;
+/* Title styles */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-button {
-    background-color: #007bff;
+/* Upload button styles */
+.upload-button {
+    display: inline-block;
+    background-color: black;
     color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 25px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+.upload-button:hover {
+    background-color: #1680AC;
 }
 
-#preview {
+/* Image preview styles */
+.image-preview {
     margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    max-width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.image-preview img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
