@@ -43,7 +43,7 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: #575757; /* Darker background on hover */
+    background-color: #1680ac; /* Darker background on hover */
     border-radius: 5px; /* Rounded corners on hover */
 }
 
